@@ -1,0 +1,531 @@
+/* Todo el Documento */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Logo*/
+
+.logo a {
+    /*color: rgb(226, 226, 226);*/
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+/* Menu */
+
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgba(114, 114, 114, 0.301);
+}
+
+.nav-link {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-link li {
+    list-style: none;
+}
+
+.nav-link a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-link a:hover {
+    background-color: #777174;
+    border-radius: 5px;
+}
+
+
+/* Menu Hamburguesa*/
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.3 ease;
+}
+
+
+/* Seccion Inicio*/
+
+.Inicio {
+    background-color: rgba(53, 102, 207, 0.918);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.Inicio-Centrar {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: rgb(226, 226, 226);
+}
+
+.Inicio-Centrar h2 {
+    display: contents;
+    font-size: 30px;
+    text-align: justify;
+}
+
+table {
+    margin: auto;
+    text-align: right;
+}
+
+.Inicio-Centrar h3 {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.Inicio-Centrar label {
+    font-size: 45px;
+}
+
+.Inicio-Centrar img:hover {
+    background-color: rgba(255, 255, 255, 0.712);
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.caja {
+    font-size: 45px;
+}
+
+
+/* Seccion Sobre Mí*/
+
+.Sobre_mi {
+    /*  background-image: url('./images/fondo2.jpg');*/
+    background-color: whitesmoke;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: center;
+}
+
+.Sobre_mi-Caja {
+    border-radius: 10px;
+    width: 1000px;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 80px 0px 80px 0px;
+    background-color: rgba(255, 255, 255, 0.377);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Sobre_mi-Detalles {
+    width: auto;
+}
+
+.Sobre_mi-Titulo {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.Sobre_mi-Descripcion {
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.Sobre_mi-Imagen {
+    margin: auto;
+}
+
+.Sobre_mi-Imagen img {
+    padding: 5px;
+    border-radius: 0px 100px 0px 100px;
+}
+
+
+/* Seccion Portafolio*/
+
+.Portafolio {
+    padding-top: 10em;
+    background-color: #2E86C1;
+    /* background-color: rgba(55, 55, 245, 0.795);
+    background-image: url('./images/fondo2.jpg');*/
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.Portafolio-Centrar {
+    position: absolute;
+    margin-top: -14em;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+    color: rgb(226, 226, 226);
+}
+
+.Portafolio-Caja {
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f4fbff;
+}
+
+.Portafolio-Imagen img {
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.Portafolio-Detalles {
+    margin: 20px 40px;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.Portafolio-Titulo {
+    margin-left: 20px;
+}
+
+.Portafolio-Descripcion {
+    text-align: left;
+}
+
+.Portafolio-Url {
+    color: #056fff;
+    border: 1px solid;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+/* Seccion Cursos*/
+
+.Cursos {
+    padding-top: 10em;
+    background-color: #85C1E9;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.Curso-Centrar {
+    position: absolute;
+    margin-top: -14em;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+    color: white;
+}
+
+.Curso-Caja {
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f4fbff;
+}
+
+.Curso-Imagen img {
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.Curso-Detalles {
+    margin: 20px 40px;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.Curso-Titulo {
+    margin-left: 20px;
+}
+
+.Curso-Descripcion {
+    text-align: left;
+}
+
+.Curso-Url {
+    color: #056fff;
+    border: 1px solid;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.Curso-Url a:hover {
+    background-color: #1f3572;
+}
+
+
+/* Seccion Contacto*/
+
+.Contacto {
+    background-image: url('./images/fondo2.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contacto-Centrar {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: white;
+}
+
+.Contacto-Centrar h2 {
+    font-size: 30px;
+}
+
+.Contacto-Centrar img:hover {
+    background-color: rgba(255, 255, 255, 0.712);
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+
+/*Nav Responsive*/
+
+@media screen and (max-width:768px) {
+    .nav-link {
+        position: absolute;
+        right: 0px;
+        width: 100%;
+        height: 60vh;
+        top: 8vh;
+        background-color: #056dffb4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-link li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+    }
+    /* Sobre Mi Responsive */
+    .Sobre_mi {
+        padding-top: 2em;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: center;
+    }
+    .Sobre_mi-Caja {
+        width: auto;
+        display: inherit;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .Sobre_mi-Imagen img {
+        width: 250px;
+        text-align: center;
+    }
+    .Sobre_mi-Detalles {
+        width: auto;
+    }
+    .Sobre_mi-Titulo {
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+    .Sobre_mi-Descripcion {
+        text-align: left;
+        text-size-adjust: 10px;
+    }
+    /* Portafolio Responsive */
+    .Portafolio {
+        padding-top: 10em;
+        padding-bottom: 1em;
+        height: auto;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: center;
+    }
+    .Portafolio-Centrar {
+        margin-top: -3em;
+        margin-left: 3em;
+        text-align: center;
+        text-transform: uppercase;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 5px;
+        font-size: 20px;
+        color: rgb(226, 226, 226);
+    }
+    .Portafolio-Caja {
+        width: auto;
+        display: inherit;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .Portafolio-Imagen {
+        width: auto;
+        text-align: center;
+    }
+    .Portafolio-Imagen img {
+        width: auto;
+        text-align: center;
+    }
+    .Portafolio-Detalles {
+        width: auto;
+    }
+    .Portafolio-Titulo {
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+    .Portafolio-Descripcion {
+        text-align: left;
+    }
+    .Portafolio-Url {
+        font-size: 1em;
+    }
+    /* Cursos Responvive*/
+    .Cursos {
+        padding-top: 10em;
+        padding-bottom: 1em;
+        height: auto;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: center;
+    }
+    .Curso-Centrar {
+        margin-top: -3em;
+        margin-left: 5em;
+        text-align: center;
+        text-transform: uppercase;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 5px;
+        font-size: 20px;
+        color: rgb(226, 226, 226);
+    }
+    .Curso-Caja {
+        width: auto;
+        display: inherit;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .Curso-Imagen {
+        width: auto;
+        text-align: center;
+    }
+    .Curso-Imagen img {
+        width: auto;
+        text-align: center;
+    }
+    .Curso-Detalles {
+        width: auto;
+    }
+    .Curso-Titulo {
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+    .Curso-Descripcion {
+        text-align: left;
+    }
+    .Curso-Url {
+        font-size: 1em;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: o;
+        transform: translateX(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+
+/*Menu Hamburguesa animado*/
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}

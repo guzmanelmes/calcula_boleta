@@ -1,13 +1,24 @@
-function myFunction() {
-    var x, y, suma, text;
-    x = document.getElementById("num1").value;
-    y = document.getElementById("num2").value;
-    if (isNaN(x) || isNaN(y)) {
-        text = "Es necesarios introducir dos números válidos";
-    } else {
-        //si no ponemos parseFloat concatenaría x con y  
-        suma = parseFloat(x) + parseFloat(y);
-        text = suma;
-    }
-    document.getElementById("sumando").innerHTML = text;
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-link');
+    const navLink = document.querySelectorAll('.nav-link li');
+
+    burger.addEventListener('click', () => {
+        //Toggle Nav
+        nav.classList.toggle('nav-active');
+        //Animate Links
+        navLink.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 1.3}s`;
+            }
+
+        });
+        //burger animation
+        burger.classList.toggle('toggle');
+    });
+
+
 }
+navSlide();
