@@ -8,7 +8,7 @@ function myFunction() {
     valor_retencion_bruto = parseInt(valor_boleta_bruto) * 0.1075;
 
     valor_efectivo_liquido = parseInt(valor_pactado);
-    valor_efectivo_bruto = parseFloat(valor_pactado) + valor_retencion_bruto;
+    valor_efectivo_bruto = parseFloat(valor_pactado) - valor_retencion_bruto;
 
     document.getElementById("valor_boleta_liquido").innerHTML = new Intl.NumberFormat("de-DE").format(valor_boleta_liquido.toFixed(0));
     document.getElementById("valor_boleta_bruto").innerHTML = new Intl.NumberFormat("de-DE").format(valor_boleta_bruto.toFixed(0));

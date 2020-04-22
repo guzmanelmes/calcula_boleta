@@ -87,12 +87,16 @@ nav {
 }
 
 .Inicio-Centrar {
+    margin-top: -10em;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0.514);
     display: block;
     justify-content: center;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 5px;
-    color: rgb(226, 226, 226);
+    color: white;
 }
 
 .Inicio-Centrar h2 {
@@ -104,6 +108,10 @@ nav {
 table {
     margin: auto;
     text-align: right;
+}
+
+table td {
+    text-align: left;
 }
 
 .Inicio-Centrar label {
@@ -118,6 +126,7 @@ table {
 /* Seccion Contacto*/
 
 .Contacto {
+    padding-top: -6em;
     background-image: url('./images/fondo2.jpg');
     background-position: center center;
     background-size: cover;
@@ -171,20 +180,21 @@ table {
     }
     /*InicioResponsive */
     .Inicio-Centrar h2 {
+        padding-top: 0em;
         display: contents;
-        font-size: 15px;
+        font-size: 20px;
         text-align: justify;
     }
     table {
         margin: auto;
         text-align: right;
-        font-size: 13px;
+        font-size: 14px;
     }
     .Inicio-Centrar label {
-        font-size: 19px;
+        font-size: 20px;
     }
     .caja {
-        font-size: 19px;
+        font-size: 20px;
     }
 }
 
